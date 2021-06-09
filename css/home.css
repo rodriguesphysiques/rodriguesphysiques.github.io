@@ -16,5 +16,6 @@
     left: 0;
     top: 0;
     z-index: 2;
-    min-height: 340px;
+    
+    min-height: 270px;
 }
