@@ -48,11 +48,14 @@ a, li {
 
 video {
   width: 100%;
+  margin-left: 50vw;
+  transform: translate(-50%);
 }
 
 #pageBody {
   width: 100%;
   height: 5000px;
+  overflow-x: hidden;
 }
 
 /* 
