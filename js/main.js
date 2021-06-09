@@ -10,6 +10,7 @@ var sticky = 70;
 
 function scrollFunc() {
   var scrollPosition = window.pageYOffset;
+  console.log("sticky is supposed to be added")
 
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky");
@@ -18,14 +19,14 @@ function scrollFunc() {
   }
 }
 
-function startFunction() {
-  // document.getElementById('home').focus();
-  Scrolldown();
-  }
+// function startFunction() {
+//   // document.getElementById('home').focus();
+//   Scrolldown();
+//   }
 
-function Scrolldown() {
-  window.scroll(0,300); 
-}
+// function Scrolldown() {
+//   window.scroll(0,300); 
+// }
 
 function menuExpand(e) {
   e.classList.toggle("menuecng");
