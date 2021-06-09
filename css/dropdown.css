@@ -1,6 +1,6 @@
 /* Dropdown animation */
 
-.dropdown {
+.dropdown, .dropdown2 {
   padding: 35px 40px;
   display: flex;
   justify-content: center;
@@ -12,7 +12,7 @@
   z-index: 100;
 }
 
-.dropdown > a {
+.dropdown > a, .dropdown2 > a {
   color: var(--txtbaseCol);
 } 
 
@@ -184,14 +184,14 @@
   transition: 0.4s;
 }
 
-.dropdown:hover .bar1, .menuecng .bar1 {
+.menuecng .bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.dropdown:hover .bar2, .menuecng .bar2{opacity: 0;}
+.menuecng .bar2{opacity: 0;}
 
-.dropdown:hover .bar3, .menuecng .bar3 {
+.menuecng .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
