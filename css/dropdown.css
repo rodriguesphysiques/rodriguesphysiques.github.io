@@ -211,14 +211,15 @@
   nav {
     height: 70px;
     justify-content: space-between;
+    /* background-color: var(--maincol1); */
   }
 
   #logodiv {
     padding-left: 20px;
   }
 
-  /* #adbaroverlay {
-
-  } */
+  #adbar {
+    padding-top: 70px;
+  }
   
 }

@@ -22,9 +22,14 @@ function scrollFunc() {
   }
 }
 
-// function startFunction() {
-//   document.getElementById('home').focus();
-// }
+function startFunction() {
+  // document.getElementById('home').focus();
+  Scrolldown();
+  }
+
+function Scrolldown() {
+  window.scroll(0,300); 
+}
 
 function menuExpand(e) {
   e.classList.toggle("menuecng");

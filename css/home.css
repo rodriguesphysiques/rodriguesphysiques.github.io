@@ -4,16 +4,17 @@
     background-color: var(--maincol2);
     min-width: 629px;
     text-align: center;
+    background-color: var(--maincol);
 }
 
 #adbaroverlay {
     padding-top: 80px;
     background-color: #00000072;
     width: 100%;
-    height: calc(100vw * 0.55 - 9px);
+    height: calc(100vw * 0.55 - 89px);
     position: absolute;
     left: 0;
     top: 0;
     z-index: 2;
-    min-height: 270px;
+    min-height: 340px;
 }
