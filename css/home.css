@@ -1,0 +1,16 @@
+#adbar {
+    width: 100%;
+    /* height: 500px; */
+    background-color: var(--maincol2);
+}
+
+#adbaroverlay {
+    background-color: #00000072;
+    width: 100%;
+    height: calc(100vw * 0.55 - 9px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    
+}

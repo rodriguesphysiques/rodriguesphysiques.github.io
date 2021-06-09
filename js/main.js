@@ -1,4 +1,4 @@
-window.onscroll = function() {myFunction()};
+window.onscroll = function() {scrollFunc()};
 
 // window.onload = function() {startFunction()};
 
@@ -7,7 +7,8 @@ var navimg = document.getElementById("logo");
 var imgheader = document.getElementById("imgheader");
 var sticky = navbar.offsetTop;
 
-function myFunction() {
+
+function scrollFunc() {
   var scrollPosition = window.pageYOffset;
 
   if (window.pageYOffset >= sticky) {
@@ -24,3 +25,7 @@ function myFunction() {
 // function startFunction() {
 //   document.getElementById('home').focus();
 // }
+
+function menuExpand(e) {
+  e.classList.toggle("menuecng");
+}
