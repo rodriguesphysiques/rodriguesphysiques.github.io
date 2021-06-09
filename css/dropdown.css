@@ -226,7 +226,13 @@
   }
 
   #adbar {padding-top: 70px;}
-  #adbaroverlay {margin-top: 70px;}
+  #adbaroverlay {
+    margin-top: 70px;
+  }
+
+  #adbaroverlay > div {
+    margin-top: -80px;
+  }
 
   .sticky nav {
     background-color: var(--navbarcol);
