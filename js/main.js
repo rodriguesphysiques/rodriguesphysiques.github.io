@@ -5,20 +5,16 @@ window.onscroll = function() {scrollFunc()};
 var navbar = document.getElementById("navbar");
 var navimg = document.getElementById("logo");
 var imgheader = document.getElementById("imgheader");
-var sticky = navbar.offsetTop;
+var sticky = 70;
 
 
 function scrollFunc() {
   var scrollPosition = window.pageYOffset;
 
   if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-    // imgheader.style.opacity = 0;
-    // navimg.style.opacity = 100;
-  } else {
+    navbar.classList.add("sticky");
+  } else if (window.pageYOffset <= sticky) {
     navbar.classList.remove("sticky");
-    // imgheader.style.opacity = 100;
-    // navimg.style.opacity = 0;
   }
 }
 

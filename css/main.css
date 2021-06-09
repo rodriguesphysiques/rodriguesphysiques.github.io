@@ -74,18 +74,19 @@ font-family: 'Poppins', sans-serif;
 /* -------------------------------------------------- */
 
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
+  
 }
 
-.sticky + .innerBody {
+/* .sticky + .innerBody {
   padding-top: 60px;
-}
+} */
 
 
 #navbar {
   z-index: 10;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 nav {
