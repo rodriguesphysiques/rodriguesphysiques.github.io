@@ -235,4 +235,9 @@
   .sticky .dropdown_menu li {
     background-color: var(--navbarcol);
   }
+
+  .sticky .dropdown_menu li:hover {
+    background-color: var(--maincol3);
+  }
 }
+
