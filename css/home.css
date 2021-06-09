@@ -91,7 +91,7 @@ h3 {
 
 #angch .imgtxtdiv {
     background-image: url("../res/images/ang2.png");
-    margin-left: -10px;
+    /* margin-left: -10px; */
     
 }
 
@@ -124,7 +124,7 @@ h3 {
                 rgba(255,255,255,0) 100%);
 }
 
-/* @media all and (min-width: 1600px) {
+@media all and (min-width: 1600px) {
     #mtchcs {
         margin: 0 calc((100vw - 90%)/2);
         margin-top: calc((1600px - 100vw) * 0.95);
@@ -132,4 +132,4 @@ h3 {
         width: 90%;
         
     }
-} */
+}
