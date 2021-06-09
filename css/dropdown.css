@@ -74,7 +74,7 @@
 }
 
 .dropdown_menu-9 {
-  animation: growOut 1000ms ease-in-out forwards;
+  animation: growOut 500ms ease-in-out forwards;
   transform-origin: top center;
 }
 
@@ -181,7 +181,7 @@
   height: 5px;
   background-color: var(--txtbaseCol);
   margin: 6px 0;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 .menuecng .bar1 {
