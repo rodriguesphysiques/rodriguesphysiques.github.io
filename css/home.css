@@ -138,13 +138,80 @@ h3 {
 
 
 #rvws {
-    /* position: absolute; */
     width: 100%;
-    height: 500px;
+    height: 450px;
     border: 1px var(--maincol3);
 
-    background-color: #eee; /* Just to mark where the Div is, it will be white */
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
+
+
+/* Flip card */
+
+.flip-card {
+    /* background-color: transparent; */
+    width: 300px;
+    margin: 20px 10px;
+    margin-bottom: 50px;
+    height: 300px;
+    perspective: 1000px;
+  }
+
+
+.flip-card-inner img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 0px 8px 0px #727272b0;
+  }
+
+.halft img {
+    opacity: 0.2;
+}
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateX(-180deg);
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    background-size: contain;
+  }
+  
+  /* .flip-card-front { */
+    /* background-color: #bbb; */
+    /* color: black; */
+  /* } */
+  
+  .flip-card-back {
+    color: black;
+    transform: rotateX(180deg);
+  }
+
 
 
 /* -------------------------------------------------- */
@@ -153,13 +220,120 @@ h3 {
 
 
 #plangiv {
-    /* position: absolute; */
     width: 100%;
-    height: 500px;
+    /* height: 700px; */
     border: 1px var(--maincol3);
+    margin: 20px 0;
 
-    background-color: rgba(255, 15, 15, 0.207); /* Just to mark where the Div is, it will be white */
+    /* overflow: hidden; */
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    /* padding: 10px; */
 }
+
+#plangiv div {
+    /* margin: 20px 10px; */
+}
+
+#gadiv {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    height: 320px;
+    width: 400px;
+    align-self: center;
+    padding: 20px 15px; 
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+#gadiv h3 {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 500;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    color: var(--maincol2);
+    text-transform: none;
+    letter-spacing: 1px;
+}
+
+#gadiv p {
+    letter-spacing: 3px;
+}
+
+#gftdiv img {
+    content: url("../res/images/bb.png");
+    /* min-width: 400px; */
+    max-width: min(100vw, 500px);
+    max-height: 700px;
+    width: auto;
+    height: auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+input[type=text], input[type=email], button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px;
+    margin: 10px 30px;
+    border-radius: 4px;
+    transition: all 0.1s linear;
+}
+
+input[type=text], input[type=email] {
+    border: 1px solid var(--maincol2);
+    
+}
+
+input[type=text]:hover, input[type=email]:hover {
+    box-shadow: 0 0 4px 0px var(--maincol2);
+    /* border: 1px solid var(--maincol1); */
+    background-color: var(--maincol4);
+}
+
+input[type=text]:focus-visible, input[type=email]:focus-visible {
+    box-shadow: 0 0 8px 1px var(--maincol2);
+    border: 1px solid var(--maincol2);
+    outline-width: 0;
+    background-color: white;
+}
+
+button {
+    color: var(--txtbaseCol);
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: var(--maincol2);
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-family: 'Poppins', sans-serif; 
+    cursor: pointer;
+    border: 1px solid #00000000;
+    
+}
+
+button:hover {
+    background-color: #eee;
+    box-shadow: 0 0 4px 1px var(--maincol2);
+    color: var(--maincol2);
+}
+
+button:active {
+    background-color: var(--maincol1);
+    color: var(--txtbaseCol);
+}
+
+
+
+
+
 
 
 /* -------------------------------------------------- */
@@ -168,13 +342,76 @@ h3 {
 
 
 #cntcus {
-    /* position: absolute; */
     width: 100%;
-    height: 500px;
+    /* height: 300px; */
     border: 1px var(--maincol3);
 
-    background-color: rgba(40, 20, 225, 0.138); /* Just to mark where the Div is, it will be white */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: var(--maincol4);
+    color: var(--maincol2);
+    font-family: 'Poppins', sans-serif; 
 }
+
+#cntcus h2 {
+    color: var(--maincol2);
+    height: 1em;
+}
+
+#cntcus div {
+    width: 300px;
+    height: 200px;
+}
+
+#cntcus h3 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 1px;
+    /* margin: 10px 0; */
+}
+
+#cntcus a {
+    /* text-decoration: underline; */
+    color: var(--txtcol2);
+    text-shadow: 0 0px 1px var(--maincol2);
+    transition: all 0.2s linear;
+}
+
+#cntcus td + .und {
+    user-select:text; /* supported by Chrome and Opera */
+    -webkit-user-select: text; /* Safari */
+    -khtml-user-select: text; /* Konqueror HTML */
+    -moz-user-select: text; /* Firefox */
+    -ms-user-select: text; /* Internet Explorer/Edge */
+}
+
+
+#cntcus a:hover {
+    color: var(--txtcol2)
+}
+
+
+
+
+
+#dets {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    background-color: var(--maincol2);
+    color: var(--txtbaseCol);
+    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Barlow Semi Condensed', sans-serif; */
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+#dets span {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+}
+
 
 
 
@@ -195,3 +432,6 @@ h3 {
         padding-bottom: calc((1600px - 100vw) * 0.9);
     }
 }
+
+
+
