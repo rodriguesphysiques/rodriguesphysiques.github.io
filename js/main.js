@@ -27,4 +27,7 @@ function scrollFunc() {
 //   window.scroll(0,300); 
 // }
 
-
+$(document).ready(function() {
+  $('#navbar').load('navmenu.html');
+  $('#pageBody').load('home.html');
+});
