@@ -314,7 +314,7 @@ button:active {
     justify-content: center;
     width: 100%;
     position: relative;
-    min-height: 380px;
+    min-height: 420px;
 }
 
 #stwght h2 {
@@ -416,82 +416,7 @@ button:active {
 
 
 
-/* -------------------------------------------------- */
-/*                Contact Us                          */
-/* -------------------------------------------------- */
 
-
-#cntcus {
-    width: 100%;
-    /* height: 300px; */
-    border: 1px var(--maincol3);
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    background-color: var(--maincol3);
-    color: var(--maincol2);
-    font-family: 'Poppins', sans-serif; 
-}
-
-#cntcus h2 {
-    color: var(--maincol2);
-    height: 1em;
-
-}
-
-#cntcus div {
-    width: 300px;
-    height: 200px;
-}
-
-#cntcus h3 {
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 1px;
-    /* margin: 10px 0; */
-}
-
-#cntcus a {
-    /* text-decoration: underline; */
-    color: var(--txtcol2);
-    text-shadow: 0 0px 1px var(--maincol2);
-    transition: all 0.2s linear;
-}
-
-#cntcus td + .und {
-    user-select:text; /* supported by Chrome and Opera */
-    -webkit-user-select: text; /* Safari */
-    -khtml-user-select: text; /* Konqueror HTML */
-    -moz-user-select: text; /* Firefox */
-    -ms-user-select: text; /* Internet Explorer/Edge */
-}
-
-
-#cntcus a:hover {
-    color: var(--txtcol2)
-}
-
-
-
-
-
-#dets {
-    width: 100%;
-    height: 50px;
-    line-height: 50px;
-    background-color: var(--maincol2);
-    color: var(--txtbaseCol);
-    font-family: 'Montserrat', sans-serif;
-    /* font-family: 'Barlow Semi Condensed', sans-serif; */
-    text-align: center;
-    letter-spacing: 2px;
-}
-
-#dets span {
-    display: inline-block;
-    vertical-align: middle;
-    line-height: normal;
-}
 
 
 
