@@ -27,6 +27,20 @@ function scrollFunc() {
 //   window.scroll(0,300); 
 // }
 
+function liClicked(e) {
+  var els = document.getElementsByClassName("liclck");
+  
+  // for (var i = 0; i < els.length; i++) {
+    // els[i].classList.remove('liclck');
+    // }
+
+
+  while(els.length > 0){
+    els[0].classList.remove('liclck');
+  }
+  e.classList.toggle("liclck");
+}
+
 $(document).ready(function() {
   $('#navbar').load('navmenu.html');
   $('#pageBody').load('home.html');

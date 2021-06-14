@@ -381,6 +381,7 @@ button:active {
 
 #sitmenu i {
     float: right;
+    transition: all 0.23s linear;
 }
 
 #sitmenu > ul > li {
@@ -401,6 +402,16 @@ button:active {
     overflow-y: hidden;
     transition: height 0.2s linear;
 }
+
+.liclck .subm > li {
+    height: 30px;
+    padding: 5px 0;
+  }
+
+  .liclck i{
+    transform: rotate(-180deg);
+  }
+
 
 
 

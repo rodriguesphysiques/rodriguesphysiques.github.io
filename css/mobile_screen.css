@@ -104,8 +104,15 @@
       opacity: 0.3;
     }
 
+    .liclck .subm > li {
+      height: 0;
+      padding: 0;
+    }
+
     li:hover .subm > li {
       height: 30px;
       padding: 5px 0;
     }
+
+    
   }
