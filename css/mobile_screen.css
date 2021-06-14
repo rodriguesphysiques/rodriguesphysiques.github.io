@@ -1,0 +1,111 @@
+@media all and (max-width: 780px) {
+    .bigm { display: none; }
+    .smallm {display: flex;}
+    nav {
+      height: 70px;
+      justify-content: space-between;
+      background-color: var(--maincol1);
+      transition: background-color 0.3s linear;
+    }
+  
+    .dropdown_menu li {
+      background-color: var(--maincol1);
+      transition: background-color 0.3s linear;
+    }
+  
+    #logodiv {
+      padding-left: 20px;
+    }
+  
+    #adbar {padding-top: 70px;}
+    #adbaroverlay {
+      margin-top: 70px;
+    }
+  
+    #adbaroverlay > div {
+      margin-top: -80px;
+    }
+  
+    .sticky nav {
+      background-color: var(--navbarcol);
+    }
+    
+    .sticky .dropdown_menu li {
+      background-color: var(--navbarcol);
+    }
+  
+    .sticky .dropdown_menu li:hover {
+      background-color: var(--maincol3);
+    }
+  
+    h2 {
+      font-size: 3.5em;
+    }
+
+
+    /* Home Screen */
+
+    .subdiv {
+        margin-bottom: 30px;
+    }
+
+    #rvws {
+        height: 300px;
+        background: 
+                /* linear-gradient(to bottom right,transparent 50%,#2B2B2B 0) bottom right/70px 70px no-repeat, */
+                /* linear-gradient(to bottom right,transparent 50%,#6D6D6D 0) bottom right/140px 140px no-repeat,
+                linear-gradient(to bottom right,transparent 50%,#999 0) bottom right/210px 210px no-repeat, */
+
+                /* linear-gradient(to top left,transparent 50%,#2B2B2B 0) top left/70px 70px no-repeat, */
+                /* linear-gradient(to top left,transparent 50%,#6D6D6D 0) top left/140px 140px no-repeat,
+                linear-gradient(to top left,transparent 50%,#999 0) top left/210px 210px no-repeat, */
+                var(--maincol3);
+    }
+
+    #plangiv {
+        margin-top: 0;
+    }
+
+    /* Site Map */
+    #stwght {
+      margin-top: 50px;
+    }
+
+    #stwght h2 {
+      font-size: 3.5em;
+    }
+    #stwght h3 {
+      font-size: 0.5em;
+      margin-top: -10px;
+      text-align: center;
+    }
+
+    #mp {
+      padding-top: 0;
+      margin-right: 0;
+      width: 90%;
+      /* padding-right: 30px; */
+    }
+
+    #mp .rt > div {
+      padding-top: 0;
+      /* margin-left: -30px; */
+      transform: rotate(0);
+    }
+
+    .rt {
+      height: 150px;
+      margin-top: -30px;
+    }
+
+    #ssti {
+      position: absolute;
+      z-index: -1;
+      opacity: 0.3;
+    }
+
+    li:hover .subm > li {
+      height: 30px;
+      padding: 5px 0;
+    }
+  }

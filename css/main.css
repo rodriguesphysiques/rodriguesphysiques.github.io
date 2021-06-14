@@ -7,12 +7,14 @@
   --maincol1: black;
   --maincol2: #444;
   --maincol3: #EEE;
-  --maincol4: #eee;
+  --maincol4: #9e9e9e;
 
   --navbarcol: #000000b9;
 
   --txtbaseCol: white;
   --txtcol2: #1f1e1e;
+
+  --crnrsiz: 70px;
 }
 
 
@@ -66,6 +68,41 @@ video {
   /* max-width: calc(100%); */
 }
 
+@font-face {
+  font-family: 'Moon Time'; 
+  src: url("../res/fonts/Moon_Time/MoonTime-Regular.ttf") format("truetype");
+  src: url("../res/fonts/Moon_Time/MoonTime-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+
+/* -------------------------------------------------- */
+/*                  headers styling                   */
+/* -------------------------------------------------- */
+
+
+h2 {
+  width: 100%;
+  color: var(--txtcol2);
+  /* font-family: 'Odibee Sans', cursive; */
+  font-family: 'Moon Time', cursive; 
+  font-weight: 400;
+  font-size: 6.5em;
+  letter-spacing: 2px;
+  text-align: center;
+  margin: 20px 0;
+}
+
+h3 {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-shadow: 0 0px 1px black;
+  padding: 15px 0;
+}
+
+
 /* -------------------------------------------------- */
 /*                  Scroll Bar                        */
 /* -------------------------------------------------- */
@@ -79,7 +116,7 @@ video {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: var(--maincol4);
+  background: var(--maincol3);
   border-radius: 10px;
 }
 

@@ -45,28 +45,6 @@
     opacity: 0.97;
 }
 
-h2 {
-    width: 100%;
-    color: var(--txtcol2);
-    font-family: 'Odibee Sans', cursive;
-    /* font-family: 'Montserrat', sans-serif; */
-    /* font-family: 'Barlow Semi Condensed', sans-serif; */
-    /* font-family: 'Poppins', sans-serif;  */
-    font-weight: 600;
-    font-size: 2.3em;
-    letter-spacing: 2px;
-    text-align: center;
-}
-
-h3 {
-    width: 100%;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    text-shadow: 0 0px 1px black;
-    padding: 15px 0;
-}
-
 .subdiv {
     width: calc(50% - 40px);
     /* min-width: calc(100% - 20px); */
@@ -75,7 +53,7 @@ h3 {
     /* float: left; */
     min-width: 380px;
     max-width: 600px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 }
 
 .subdiv div {
@@ -112,7 +90,7 @@ h3 {
                 rgba(255,255,255,0) 0%, 
                 rgba(238,238,238,0.5) 6%, 
                 rgba(238,238,238,0.9) 12%, 
-                rgba(238,238,238,1) 18%);
+                var(--maincol3) 18%);
 }
 
 #danch .imgtxtdiv {
@@ -125,7 +103,7 @@ h3 {
     padding-right: 60px;
     text-align: left;
     background: linear-gradient(90deg, 
-                rgba(238,238,238,1) 82%,
+                var(--maincol3) 82%,
                 rgba(238,238,238,0.9) 88%, 
                 rgba(238,238,238,0.5) 94%,
                 rgba(255,255,255,0) 100%);
@@ -146,6 +124,23 @@ h3 {
     overflow: hidden;
     flex-wrap: wrap;
     justify-content: space-evenly;
+
+    padding-bottom: 150px;
+
+    /* background-color: ; */
+
+    background: linear-gradient(to bottom right,transparent 50%,#2B2B2B 0) bottom right/70px 70px no-repeat,
+                linear-gradient(to bottom right,transparent 50%,#6D6D6D 0) bottom right/140px 140px no-repeat,
+                linear-gradient(to bottom right,transparent 50%,#999 0) bottom right/210px 210px no-repeat,
+
+                linear-gradient(to top left,transparent 50%,#2B2B2B 0) top left/70px 70px no-repeat,
+                linear-gradient(to top left,transparent 50%,#6D6D6D 0) top left/140px 140px no-repeat,
+                linear-gradient(to top left,transparent 50%,#999 0) top left/210px 210px no-repeat,
+                var(--maincol3);
+}
+
+#rvws h2 {
+    margin: 0;
 }
 
 
@@ -155,7 +150,7 @@ h3 {
     /* background-color: transparent; */
     width: 300px;
     margin: 20px 10px;
-    margin-bottom: 50px;
+    margin-bottom: 180px;
     height: 300px;
     perspective: 1000px;
   }
@@ -221,20 +216,13 @@ h3 {
 
 #plangiv {
     width: 100%;
-    /* height: 700px; */
     border: 1px var(--maincol3);
     margin: 20px 0;
-
-    /* overflow: hidden; */
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
-    /* padding: 10px; */
 }
 
-#plangiv div {
-    /* margin: 20px 10px; */
-}
 
 #gadiv {
     display: flex;
@@ -248,25 +236,12 @@ h3 {
     text-align: center;
 }
 
-#gadiv h3 {
-    font-family: 'Poppins', sans-serif;
-    /* font-family: 'Montserrat', sans-serif; */
-    font-weight: 500;
-    padding: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    color: var(--maincol2);
-    text-transform: none;
-    letter-spacing: 1px;
-}
-
 #gadiv p {
     letter-spacing: 3px;
 }
 
 #gftdiv img {
     content: url("../res/images/bb.png");
-    /* min-width: 400px; */
     max-width: min(100vw, 500px);
     max-height: 700px;
     width: auto;
@@ -277,7 +252,6 @@ form {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 input[type=text], input[type=email], button {
@@ -295,8 +269,7 @@ input[type=text], input[type=email] {
 
 input[type=text]:hover, input[type=email]:hover {
     box-shadow: 0 0 4px 0px var(--maincol2);
-    /* border: 1px solid var(--maincol1); */
-    background-color: var(--maincol4);
+    background-color: var(--maincol3);
 }
 
 input[type=text]:focus-visible, input[type=email]:focus-visible {
@@ -331,7 +304,103 @@ button:active {
 }
 
 
+/* -------------------------------------------------- */
+/*                  Site Map                          */
+/* -------------------------------------------------- */
 
+#stwght {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    min-height: 380px;
+}
+
+#stwght h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 4.5em;
+}
+
+#stwght h3 {
+    padding: 0;
+    margin: 0;
+    margin-top: -20px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--maincol4);
+    font-size: 0.8em;
+    text-align: right;
+}
+
+#mp {
+    /* padding-top: 20px; */
+    margin-right: 70px;
+    width: min(100vw, 500px);
+}
+
+#mp .rt > div {
+    transform: rotate(-17deg);
+    padding-top: 70px;
+}
+
+.rt {
+    height: 220px;
+    width: 100%;
+}
+
+#ssti {
+    background-image: url("../res/images/jss.png");
+    object-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-width: 400px;
+    
+}
+
+#ssti img {
+    max-width: min(100vw, 500px);
+    max-height: 700px;
+    width: auto;
+    height: auto;
+    opacity: 0;
+    min-width: 400px;
+}
+
+#sitmenu {
+    position: absolute;
+    bottom: 0;
+}
+
+#sitmenu ul {
+    list-style: none;
+    font-family: 'Poppins', sans-serif; 
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#sitmenu i {
+    float: right;
+}
+
+#sitmenu > ul > li {
+    width: 300px;
+    padding: 1em 0;
+    cursor: pointer;
+}
+
+#sitmenu > ul > .spcr {
+    background-color: var(--maincol4);
+    padding: 0;
+    height: 1px;
+    cursor: default;
+}
+
+.subm li {
+    height: 0;
+    overflow-y: hidden;
+    transition: height 0.2s linear;
+}
 
 
 
@@ -349,7 +418,7 @@ button:active {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: var(--maincol4);
+    background-color: var(--maincol3);
     color: var(--maincol2);
     font-family: 'Poppins', sans-serif; 
 }
@@ -357,6 +426,7 @@ button:active {
 #cntcus h2 {
     color: var(--maincol2);
     height: 1em;
+
 }
 
 #cntcus div {
@@ -432,6 +502,9 @@ button:active {
         padding-bottom: calc((1600px - 100vw) * 0.9);
     }
 }
+
+
+
 
 
 

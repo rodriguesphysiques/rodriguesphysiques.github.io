@@ -254,45 +254,5 @@
 
 
 
-@media all and (max-width: 48em) {
-  .bigm { display: none; }
-  .smallm {display: flex;}
-  nav {
-    height: 70px;
-    /* opacity: 0; */
-    justify-content: space-between;
-    background-color: var(--maincol1);
-    transition: background-color 0.3s linear;
-  }
 
-  .dropdown_menu li {
-    background-color: var(--maincol1);
-    transition: background-color 0.3s linear;
-  }
-
-  #logodiv {
-    padding-left: 20px;
-  }
-
-  #adbar {padding-top: 70px;}
-  #adbaroverlay {
-    margin-top: 70px;
-  }
-
-  #adbaroverlay > div {
-    margin-top: -80px;
-  }
-
-  .sticky nav {
-    background-color: var(--navbarcol);
-  }
-  
-  .sticky .dropdown_menu li {
-    background-color: var(--navbarcol);
-  }
-
-  .sticky .dropdown_menu li:hover {
-    background-color: var(--maincol3);
-  }
-}
 
