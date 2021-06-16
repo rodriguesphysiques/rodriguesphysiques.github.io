@@ -1,4 +1,5 @@
-@media all and (max-width: 780px) {
+@media all and (max-width: 1100px) {
+  /* Used to be 780px */
     .bigm { display: none; }
     .smallm {display: flex;}
     nav {
@@ -65,7 +66,7 @@
     }
 
     .comh2 {
-      margin-right: 90px;
+      margin-right: 70px;
       margin-bottom: 0;
     }
 
@@ -87,16 +88,16 @@
       height: 300px;
     }
 
-
     /* Site Map */
     #stwght {
-      margin-top: 20px;
+      margin-top: 30px;
       overflow-y: hidden;
     }
 
     #stwght h2 {
       font-size: 2.7em;
       margin:0 auto;
+      margin-top: 5px;
     }
     #stwght h3 {
       font-size: 0.5em;
@@ -107,7 +108,7 @@
     #mp {
       padding-top: 0;
       margin-right: 0;
-      width: 90%;
+      width: min(500px, 100vw);
     }
 
     #mp .rt > div {
@@ -134,6 +135,42 @@
     li:hover .subm > li {
       height: 30px;
       padding: 5px 0;
+    }
+
+    /* Contact Menu */
+    .cntcmain h2 {
+      font-size: 4em;
+    }
+
+    .cntcmain h3 {
+      font-size: 0.8em;
+    }
+
+    .cntcmain {
+      height: 750px;
+    }
+
+    .cntcmain .bcgrnddiv {
+      height: 750px;
+    }
+
+    .cntcmain .comh1 {
+      margin-right: 30px;
+      margin-bottom: 0;
+      top: 0;
+      height: 12.5%;
+    }
+
+    .cntcmain .comh2 {
+      margin-right: 70px;
+      margin-bottom: 0;
+      top: 0;
+      left: 0;
+      height: 10%;
+    }
+
+    input[type=text], textarea {
+      opacity: 0.9;
     }
 
     /* Template Placeholder Site */

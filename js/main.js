@@ -19,7 +19,7 @@ function scrollFunc() {
     navbar.classList.remove("sticky");
   }
 
-  $(".adbr").css("background-position", "0%" + (scrollPosition*0.4) + "px");
+  $(".adbr").css("background-position", "center " + (scrollPosition*0.4) + "px");
 }
 
 function startFunction() {
@@ -59,14 +59,11 @@ function changePage(e) {
   }
 }
 
-function loadSVG(e, fil) {
-  
-}
 
 
 $(document).ready(function() {
   $('#navbar').load('navmenu.html');
-  $('#pageBody').load('home.html');
+  $('#pageBody').load('cntcus.html');
 
   // var els = document.getElementsByClassName("nvb");
   // while(els.length > 0){

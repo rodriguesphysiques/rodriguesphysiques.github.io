@@ -10,9 +10,3 @@ function startFunction() {
     console.log(gftdiv.offsetHeight, gadiv.offsetHeight);
 }
 
-$(document).ready(function() {
-    $('.crscrs').load('./res/images/svg/crisscross.svg');
-    $('.hpag').load('./res/images/svg/heartspag.svg');
-    $('.htwo').load('./res/images/svg/hearttwos.svg');
-    $('.hshine').load('./res/images/svg/heart-shine.svg');
-});

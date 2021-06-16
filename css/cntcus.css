@@ -1,0 +1,134 @@
+
+
+.imgban {
+    background-image: url("../res/images/cntusimg.png");
+    height: min(calc(70vw), 600px);    
+}
+
+
+
+/* -------------------------------------------------- */
+/*                    Contact Form                    */
+/* -------------------------------------------------- */
+
+
+
+.cntcmain {
+    width: 100%;
+    height: 850px;
+    border: 1px var(--maincol3);
+
+    display: flex;
+    overflow: hidden;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    flex-direction: column;
+}
+
+.cntcmain h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.cntcmain h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #B7AAA8;
+    text-shadow: none;
+    width: min(90vw, 1000px);
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+
+.bcgrnddiv {
+    /* background-color: aqua; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.comcrs {
+    height: 90%;
+    width: 100%;  
+    bottom: -100px; 
+}
+
+.comh1 {
+    height: 25%;
+    right: 0;
+    bottom: 0;
+    transform: rotate(30deg);
+    margin-right: 60px;
+    margin-bottom: 10px;
+}
+
+.comh2 {
+    height: 20%;
+    right: 0;
+    bottom: 0;
+    transform: rotate(-20deg);
+    margin-right: 160px;
+    margin-bottom: 10px;
+}
+
+.bcgrnddiv svg path {
+    fill:#B7AAA8;
+}
+
+.comh1 svg path {
+    fill:var(--maincol2);
+}
+
+
+input[type=text], textarea, button {
+    width: min(90vw, 800px);
+    margin: 0 auto;
+    padding: 15px;
+    background-color: var(--maincol3);
+    margin: 15px auto;
+    border: 2px solid var(--maincol4);
+    border-radius: 10px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--maincol2);
+    transition: all 0.2s linear;
+}
+
+input[type=text]:hover, textarea:hover {
+    box-shadow: 0 0 5px 0 #B7AAA8;
+}
+
+input[type=text]:focus, textarea:focus {
+    outline: none;
+    box-shadow: none;
+    background-color: white;
+}
+
+textarea {
+    height: 200px;
+}
+
+button {
+    color: var(--txtbaseCol);
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: var(--maincol2);
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-family: 'Poppins', sans-serif; 
+    cursor: pointer;
+    border: 1px solid #00000000;
+    
+}
+
+button:hover {
+    background-color: #eee;
+    box-shadow: 0 0 4px 1px var(--maincol2);
+    color: var(--maincol2);
+}
+
+button:active {
+    background-color: var(--maincol1);
+    color: var(--txtbaseCol);
+}
