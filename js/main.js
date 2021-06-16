@@ -7,6 +7,8 @@ var navimg = document.getElementById("logo");
 var imgheader = document.getElementById("imgheader");
 var sticky = 70;
 
+var svgel = document.getElementById("nwnw");
+
 
 function scrollFunc() {
   var scrollPosition = window.pageYOffset;
@@ -57,7 +59,9 @@ function changePage(e) {
   }
 }
 
-
+function loadSVG(e, fil) {
+  
+}
 
 
 $(document).ready(function() {

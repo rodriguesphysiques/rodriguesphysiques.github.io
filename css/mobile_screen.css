@@ -51,20 +51,42 @@
 
     #rvws {
         height: 300px;
-        background: 
-                /* linear-gradient(to bottom right,transparent 50%,#2B2B2B 0) bottom right/70px 70px no-repeat, */
-                /* linear-gradient(to bottom right,transparent 50%,#6D6D6D 0) bottom right/140px 140px no-repeat,
-                linear-gradient(to bottom right,transparent 50%,#999 0) bottom right/210px 210px no-repeat, */
-
-                /* linear-gradient(to top left,transparent 50%,#2B2B2B 0) top left/70px 70px no-repeat, */
-                /* linear-gradient(to top left,transparent 50%,#6D6D6D 0) top left/140px 140px no-repeat,
-                linear-gradient(to top left,transparent 50%,#999 0) top left/210px 210px no-repeat, */
-                var(--maincol3);
+        padding-bottom: 0;
     }
 
     #plangiv {
         margin-top: 0;
     }
+
+    /* SVG Home Page */
+    .comh1 {
+      margin-right: 30px;
+      margin-bottom: 0;
+    }
+
+    .comh2 {
+      margin-right: 90px;
+      margin-bottom: 0;
+    }
+
+    .comcrs {
+      /* bottom: 0; */
+      height: 90%;
+      margin-top: 20px;
+    }
+
+    #imagdiv h3 {
+      font-size: 1.1em;
+    }
+
+    #imagdiv {
+      height: 200px;
+    }
+
+    .bcgrnddiv {
+      height: 300px;
+    }
+
 
     /* Site Map */
     #stwght {

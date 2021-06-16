@@ -87,7 +87,7 @@ h2 {
   /* font-family: 'Odibee Sans', cursive; */
   font-family: 'Moon Time', cursive; 
   font-weight: 400;
-  font-size: 6.5em;
+  font-size: 8em;
   letter-spacing: 2px;
   text-align: center;
   margin: 20px 0;
@@ -136,14 +136,6 @@ h3 {
 /*                     Navbar                         */
 /* -------------------------------------------------- */
 
-.sticky {
-  
-}
-
-/* .sticky + .innerBody {
-  padding-top: 60px;
-} */
-
 
 #navbar {
   z-index: 10;
@@ -181,9 +173,32 @@ nav {
   height: 100%;
 }
 
-.str0 {stroke:var(--txtbaseCol);stroke-width:71;stroke-miterlimit:22.9256}
-.fil0 {fill:var(--txtbaseCol)}
-.fil1 {fill:var(--txtbaseCol);fill-rule:nonzero}
+#logodiv path {
+  stroke:var(--txtbaseCol);
+  fill:var(--txtbaseCol);
+  stroke-width:71;
+  stroke-miterlimit:22.9256;
+}
+
+
+/* -------------------------------------------------- */
+/*                SVG Settings                        */
+/* -------------------------------------------------- */
+
+
+.crscrs, .hpag, .htwo, .hshine {
+  position: absolute;
+}
+
+.crscrs svg, .hpag svg, .htwo svg, .hshine svg {
+  max-width: 100%;
+  height: 100%;
+  width: auto;
+}
+
+
+
+
 
 
 /* -------------------------------------------------- */
