@@ -63,7 +63,7 @@ function changePage(e) {
 
 $(document).ready(function() {
   $('#navbar').load('navmenu.html');
-  $('#pageBody').load('cntcus.html');
+  $('#pageBody').load('home.html');
 
   // var els = document.getElementsByClassName("nvb");
   // while(els.length > 0){
