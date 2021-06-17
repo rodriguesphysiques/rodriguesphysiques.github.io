@@ -3,7 +3,7 @@
 /* -------------------------------------------------- */
 
 @font-face {
-    font-family: 'Barlow Semi CondensedBarlow Semi Condensed';
+    font-family: 'Barlow Semi Condensed';
     src: url("../res/fonts/Barlow_Semi_Condensed/BarlowSemiCondensed-Light.ttf");
     font-weight: 300;
   }
@@ -25,6 +25,12 @@
     font-weight: 300;
   }
 
+  @font-face {
+    font-family: 'Libre Franklin'; 
+    src: url("../res/fonts/Libre_Franklin/LibreFranklin-VariableFont_wght.ttf");
+    font-weight: 900;
+  }
+
   
   
   
@@ -32,5 +38,6 @@
   font-family: 'Barlow Semi Condensed', sans-serif;
   font-family: 'Montserrat', sans-serif;
   font-family: 'Odibee Sans', cursive;
-  font-family: 'Poppins', sans-serif; 
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Libre Franklin', sans-serif; 
   */

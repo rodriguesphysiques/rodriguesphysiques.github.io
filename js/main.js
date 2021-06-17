@@ -19,7 +19,7 @@ function scrollFunc() {
     navbar.classList.remove("sticky");
   }
 
-  $(".adbr").css("background-position", "center " + (scrollPosition*0.4) + "px");
+  $(".adbr").css("background-position-y", (scrollPosition*0.4) + "px");
 }
 
 function startFunction() {
@@ -42,13 +42,22 @@ function liClicked(e) {
 
 function changePage(e) {
   var menuP = e.classList;
-  menuP = menuP[menuP.length-1];
+  menuP = menuP[0];
   switch(menuP) {
     case "homem":
       $('#pageBody').load('home.html');
       break;
     case "progm":
       $('#pageBody').load('progs.html');
+      break;
+    case "4wkh":
+      $('#pageBody').load('./htmls/programmes/4wkh.html');
+      break;
+    case "6wkh":
+      $('#pageBody').load('./htmls/programmes/6wkh.html');
+      break;
+    case "6wkg":
+      $('#pageBody').load('./htmls/programmes/6wkg.html');
       break;
     case "blogm":
       $('#pageBody').load('blog.html');
@@ -61,14 +70,9 @@ function changePage(e) {
 
 
 
+
+
 $(document).ready(function() {
   $('#navbar').load('navmenu.html');
   $('#pageBody').load('home.html');
-
-  // var els = document.getElementsByClassName("nvb");
-  // while(els.length > 0){
-  //   els[0].onclick = changePage(els[0]);
-
-  //   els[0].classList.remove('nvb');
-  // }
 });

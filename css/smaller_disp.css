@@ -1,0 +1,131 @@
+@media all and (max-width: 1100px) {
+    h2 {
+        font-size: 3.5em;
+      }
+
+      #rvws {
+        height: 300px;
+        padding-bottom: 0;
+    }
+
+    #imagdiv h3 {
+        font-size: 1.1em;
+      }
+  
+      #imagdiv {
+        height: 200px;
+      }
+  
+      .bcgrnddiv {
+        height: 300px;
+      }
+  
+      /* Site Map */
+      #stwght {
+        margin-top: 30px;
+        overflow-y: hidden;
+      }
+  
+      #stwght h2 {
+        font-size: 2.7em;
+        margin:0 auto;
+        margin-top: 5px;
+      }
+      #stwght h3 {
+        font-size: 0.5em;
+        margin-top: -10px;
+        text-align: center;
+      }
+  
+      #mp {
+        padding-top: 0;
+        margin-right: 0;
+        width: min(500px, 100vw);
+      }
+  
+      #mp .rt > div {
+        padding-top: 0;
+        transform: rotate(0);
+      }
+  
+      .rt {
+        height: 150px;
+      }
+  
+      #ssti {
+        position: absolute;
+        z-index: -1;
+        opacity: 0.3;
+        margin-top: 30px;
+      }
+  
+      .liclck .subm > li {
+        height: 0;
+        padding: 0;
+      }
+  
+      li:hover .subm > li {
+        height: 30px;
+        padding: 5px 0;
+      }
+
+      /* Contact Menu */
+    .cntcmain h2 {
+        font-size: 4em;
+      }
+  
+      .cntcmain h3 {
+        font-size: 0.8em;
+      }
+  
+      .cntcmain {
+        height: 750px;
+      }
+  
+      .cntcmain .bcgrnddiv {
+        height: 750px;
+      }
+  
+      .cntcmain .comh1 {
+        margin-right: 30px;
+        margin-bottom: 0;
+        top: 0;
+        height: 12.5%;
+      }
+  
+      .cntcmain .comh2 {
+        margin-right: 70px;
+        margin-bottom: 0;
+        top: 0;
+        left: 0;
+        height: 10%;
+      }
+  
+      input[type=text], textarea {
+        opacity: 0.9;
+      }
+
+      /* Progs */
+
+      .gsn {
+        display: none;
+      }
+  
+      .mobile_pay {
+        display: block;
+        position: absolute;
+        bottom: 0;
+      }
+
+      .imgban h2 {
+        font-size: 6em;
+      }
+
+      .imgban {
+        background-position-x: calc(120vw + 60px);
+      }
+
+      .noi h3 {
+        padding: 5px 0;
+    }
+}

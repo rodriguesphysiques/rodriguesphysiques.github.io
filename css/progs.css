@@ -1,0 +1,344 @@
+
+
+
+.scndbody {
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+
+
+.bck {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0
+}
+
+.layr1 {z-index: -2;}
+.layr2 {
+    z-index: -1;
+    height: 100%;
+    background:
+                linear-gradient(to bottom right,transparent 50%,var(--rgtBtm) 0) bottom right/calc(12vw) calc(12vw) no-repeat,
+                linear-gradient(to bottom right,transparent 50%,var(--rgtBtm) 0) bottom right/calc(20vw) calc(20vw) no-repeat,
+                linear-gradient(to bottom right,transparent 50%,var(--rgtBtm) 0) bottom right/calc(28vw) calc(28vw) no-repeat,
+
+                linear-gradient(to top right,transparent 50%,var(--rgtTop) 0) top right/calc(12vw) calc(12vw) no-repeat,
+                linear-gradient(to top right,transparent 50%,var(--rgtTop) 0) top right/calc(20vw) calc(20vw) no-repeat,
+                linear-gradient(to top right,transparent 50%,var(--rgtTop) 0) top right/calc(28vw) calc(28vw) no-repeat,
+
+                linear-gradient(to top left,transparent 50%,var(--lftTop) 0) top left/calc(23vw) calc(23vw) no-repeat,
+                linear-gradient(to top left,transparent 50%,var(--lftTop) 0) top left/calc(40vw) calc(40vw) no-repeat,
+                linear-gradient(to top left,transparent 50%,var(--lftTop) 0) top left/calc(57vw) calc(57vw) no-repeat;
+}
+
+.addspl {
+    width: 100%;
+    height: 440px;
+}
+
+.frgrnd #dets {
+    opacity: 0;
+}
+
+.frgrnd {
+    width: 100%;
+    /* position: absolute; */
+    z-index: 0;
+    /* padding-bottom: ; */
+}
+
+.cntcmain {
+    height: 500px;
+}
+
+#cntcus {
+    opacity: 0;
+}
+
+.imgban h2 {
+    margin: -0.3em 0;
+}
+
+.imgban {
+    position: relative;
+    background-color: var(--maincol3);
+    height: min(calc(70vw), 600px);  
+    background-position-x: 95%;
+}
+
+
+
+/* Image Divs */
+
+.progimg {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+
+    width: 95%;
+    padding: 20px 2.5%;
+
+    background:
+    linear-gradient(
+      to left, 
+      transparent 0%,
+      #dfdfdfad 40%,
+      #dfdfdf 50%,
+      #dfdfdfad 60%,
+      transparent 100%
+    )
+    left 
+    bottom
+    no-repeat; 
+  background-size:100% 1px ;
+}
+
+.conts {
+    max-height: 400px;
+}
+
+.contsb {
+    max-height: 440px;
+}
+
+.progimg > div{
+    width: 50%;
+    min-width: 270px;
+    height: 400px;
+}
+
+
+
+.gsn {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 10px;
+    width: 230px;
+    height: 100%;
+}
+
+.innrimg img {
+    float: left;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.gsn h1 {
+    text-align: left;
+    font-family: 'Libre Franklin', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 900;
+    font-size: calc(200%);
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s linear;
+    text-align: left;
+}
+
+.gsn h1 b {
+     font-size: 2.4em;
+     color: white;
+     color:transparent;
+     letter-spacing: 0;
+     -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.gsn h3 {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    text-shadow: none;
+}
+
+.innrimg {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 100%;
+}
+
+.imghld {
+    position: relative;
+    height: 100%;
+    margin-bottom: 200px;
+}
+
+.mobile_pay {
+    display: none;
+    width: 100%;
+    background-color: rgb(255, 255, 255, 0.4);
+}
+
+.mobile_pay button {
+    display: block;
+    margin-bottom: 12px;
+}
+
+.mobile_pay h3 {
+    padding: 8px 0;
+    margin: 0;
+    text-shadow: 0 0 15px white;
+}
+
+.innrimg h3 {
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.bultxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: black;
+    max-width: 640px;
+}
+
+.conts .bultxt {
+    width: 90%;
+    max-width: 900px;
+}
+
+.bultxt h2 {
+    margin: -5px 0;
+}
+
+.bultxt h3 {
+    font-family: 'Poppins', sans-serif;
+    text-transform: none;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.3em;
+}
+
+.noi h3 {
+    padding: 25px 0;
+}
+
+.bultxt ul {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.rght h1{
+    text-align: right;
+}
+
+.rght .gsn h3 {
+    text-align: right;
+}
+
+.rght .gsn {
+    padding-left: 0;
+    padding-right: 10px;
+}
+
+.rght .gsn button {
+    float: right;
+}
+
+.rght .innrimg {
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+}
+
+.rght .imghld {
+    margin-bottom: 0;
+    margin-top: 200px;
+}
+
+.rght {
+    flex-direction: row-reverse;
+}
+
+
+/* Program Colours */
+
+/* Refresh */
+#rfrsh b {
+    -webkit-text-stroke-color: #342c76;
+}
+
+#rfrsh {
+    color: #b2bbd7;
+}
+
+#rfrsh h3 {
+    color: #342c76;
+}
+
+#rfrsh button {
+    background-color: #342c76;
+    background-color: #5b6da3;
+}
+
+
+/* Level Up */
+
+#lvlUp b {
+    -webkit-text-stroke-color: #4e58a6;
+}
+
+#lvlUp {
+    color: #342c76;
+}
+
+#lvlUp h3 {
+    color: #342c76;
+}
+
+#lvlUp button {
+    background-color: #342c76;
+}
+
+
+/* Beach Bumz */
+
+#bchbum b {
+    -webkit-text-stroke-color: #aac4cb;
+}
+
+#bchbum {
+    color: #498097;
+}
+
+#bchbum h3 {
+    color: #342c76;
+}
+
+#bchbum button {
+    background-color: #498097;
+}
+
+/* Level-Up Gym */
+
+#lvlupgm b {
+    -webkit-text-stroke-color: #a67aa5;
+}
+
+#lvlupgm {
+    color: #29205d;
+}
+
+#lvlupgm h3 {
+    color: #342c76;
+}
+
+#lvlupgm button {
+    background-color: #29205d;
+}

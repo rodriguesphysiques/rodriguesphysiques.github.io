@@ -1,0 +1,16 @@
+@media all and (min-width: 1300px) {
+    .layr2 {
+        background:
+                    linear-gradient(to bottom right,transparent 50%,var(--rgtBtm) 0) bottom right/calc(12vw) calc(8vw) no-repeat,
+                    linear-gradient(to bottom right,transparent 50%,var(--rgtBtm) 0) bottom right/calc(20vw) calc(14vw) no-repeat,
+                    linear-gradient(to bottom right,transparent 50%,var(--rgtBtm) 0) bottom right/calc(28vw) calc(20vw) no-repeat,
+    
+                    linear-gradient(to top right,transparent 50%,var(--rgtTop) 0) top right/calc(12vw) calc(8vw) no-repeat,
+                    linear-gradient(to top right,transparent 50%,var(--rgtTop) 0) top right/calc(20vw) calc(14vw) no-repeat,
+                    linear-gradient(to top right,transparent 50%,var(--rgtTop) 0) top right/calc(28vw) calc(20vw) no-repeat,
+    
+                    linear-gradient(to top left,transparent 50%,var(--lftTop) 0) top left/calc(23vw) calc(18vw) no-repeat,
+                    linear-gradient(to top left,transparent 50%,var(--lftTop) 0) top left/calc(40vw) calc(31vw) no-repeat,
+                    linear-gradient(to top left,transparent 50%,var(--lftTop) 0) top left/calc(57vw) calc(44vw) no-repeat;
+    }
+}

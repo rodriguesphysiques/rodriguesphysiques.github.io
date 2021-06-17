@@ -3,6 +3,7 @@
 .imgban {
     background-image: url("../res/images/cntusimg.png");
     height: min(calc(70vw), 600px);    
+    background-position-x: center;
 }
 
 
@@ -93,6 +94,7 @@ input[type=text], textarea, button {
     font-family: 'Montserrat', sans-serif;
     color: var(--maincol2);
     transition: all 0.2s linear;
+    resize: none;
 }
 
 input[type=text]:hover, textarea:hover {
