@@ -74,5 +74,5 @@ function changePage(e) {
 
 $(document).ready(function() {
   $('#navbar').load('navmenu.html');
-  $('#pageBody').load('progs.html');
+  $('#pageBody').load('home.html');
 });
