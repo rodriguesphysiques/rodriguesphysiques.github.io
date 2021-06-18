@@ -3,7 +3,6 @@
 .imgban {
     background-image: url("../res/images/cntusimg.png");
     height: min(calc(70vw), 600px);    
-    background-position-x: center;
 }
 
 

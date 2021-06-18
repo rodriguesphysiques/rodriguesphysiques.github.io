@@ -69,6 +69,14 @@
         padding: 5px 0;
       }
 
+      .liclck > i {
+        transform: none;
+      }
+
+      li:hover > i {
+        transform: rotate(-180deg);
+      }
+
       /* Contact Menu */
     .cntcmain h2 {
         font-size: 4em;
