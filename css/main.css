@@ -216,6 +216,7 @@ nav {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+  background-repeat: no-repeat;
 }
 
 /* .adbr h2 {
