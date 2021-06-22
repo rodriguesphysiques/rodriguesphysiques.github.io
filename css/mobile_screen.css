@@ -165,5 +165,30 @@
     background-position-x: 89%;
   }
 
-  
+  .commj input[type=email] {
+    width: calc(100% - 154px);
   }
+
+
+  /* Blog */
+
+  .blg h2 {
+    text-align: center;
+  }
+
+  .blg h3 {
+    margin-top: 50px;
+    font-size: 60px;
+    padding-bottom: 60px;
+    background-position-y: bottom;
+    background-size: 50% auto;
+  }
+
+  .smacnt {
+    flex-direction: column;
+  }
+
+  .smacnt > div {
+    margin: 0 auto;
+  }
+}

@@ -1,3 +1,5 @@
+/* Top Banner */
+
 .noi h2 {
     font-family: 'Libre Franklin', sans-serif;
     text-transform: uppercase;
@@ -21,21 +23,24 @@
     background-position-y: center;
 }
 
+
+/* Blog Highlights etc */
+
 .hghlblg {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    padding: 20px 0;
-}
-
-.hghlblg {
+    padding-top: 40px;
     text-align: center;
 }
+
 
 .blgpst {
     width: 28%;
     min-width: 300px;
+    margin: 0 20px;
+    cursor: pointer;
 }
 
 
@@ -65,7 +70,7 @@
     transition: opacity 0.2s linear;
 }
 
-.hghlblg:hover p {
+.blgpst:hover p {
     
     opacity: 1;
 }
@@ -81,4 +86,217 @@
 .blgpst h4 {
     margin: 0;
     font-family: 'Montserrat', sans-serif;
+    color: var(--maincol2);
+}
+
+
+
+/* Join Our Community */
+
+input[type=email], button {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0 12px;
+    border-radius: 4px;
+    transition: all 0.1s linear;
+    position: absolute;
+}
+
+input[type=email] {
+    border: 1px solid transparent;
+    box-shadow: 0 0 6px 0px var(--maincol2);
+    top:0;
+    left: 0;
+    width: calc(80% - 24px);
+    height: 50px;
+    opacity: 0.85;
+}
+
+input[type=email]:hover {
+    
+    background-color: var(--maincol3);
+    border: 1px solid var(--maincol2);
+    
+}
+
+input[type=email]:focus-visible {
+    box-shadow: 0 0 8px 1px var(--maincol2);
+    border: 1px solid var(--maincol2);
+    outline-width: 0;
+    background-color: white;
+}
+
+.commj h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.commj h2 {
+    margin: 0;
+    padding-top: 40px;
+}
+
+.commj button {
+    color: var(--txtbaseCol);
+    font-weight: 400;
+    text-transform: uppercase;
+    background-color: var(--maincol2);
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    font-family: 'Poppins', sans-serif; 
+    cursor: pointer;
+    border: 1px solid #00000000;
+    border-radius: 0;
+    top: 0;
+    right: 0; 
+    width: 20%;
+    height: 50px;
+    margin-top: 1px;
+}
+
+button:hover {
+    background-color: #eee;
+    box-shadow: 0 0 4px 1px var(--maincol2);
+    color: var(--maincol2);
+}
+
+button:active {
+    background-color: var(--maincol1);
+    color: var(--txtbaseCol);
+}
+
+.emld {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;   
+    height: 60px;
+}
+
+
+/* SVG */
+
+.commj {
+    position: relative;
+   padding-bottom: 20px;
+   /* padding-top: 40px; */
+}
+
+.svgi {
+    fill: #aac4cb;
+    height: 100px;
+    position: absolute;
+    margin-top: 20px;
+    margin-left: calc(5vw);
+    transform: rotate(-10deg);
+    z-index: -1;
+    
+}
+
+
+/* SiteMenu */
+
+.smacnt {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-right: 20%;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+#sitmenu ul {
+    list-style: none;
+    font-family: 'Poppins', sans-serif; 
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+#sitmenu i {
+    float: right;
+    transition: all 0.23s linear;
+}
+
+#sitmenu > ul > li {
+    width: 300px;
+    padding: 1em 0;
+    cursor: pointer;
+}
+
+#sitmenu > ul > .spcr {
+    background-color: var(--maincol4);
+    padding: 0;
+    height: 1px;
+    cursor: default;
+}
+
+.subm li {
+    height: 0;
+    overflow-y: hidden;
+    transition: height 0.2s linear;
+}
+
+.liclck .subm > li {
+    height: 30px;
+    padding: 5px 0;
+}
+
+.liclck i{
+    transform: rotate(-180deg);
+}
+
+.rplog {
+    fill: black;
+    height: 140px;
+    width: 140px;
+    padding-top: 5vw;
+}
+
+.cntLnk h3 {
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+}
+
+.cntLnk ul {
+    list-style: none;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    padding-left: 15px;
+}
+
+.cntLnk li {
+    margin-top: 10px;
+}
+
+.cntLnk a {
+    color: var(--maincol2);
+    padding: 2px 0;
+
+}
+
+.cntLnk i {
+    width: 35px;
+}
+
+.opcc {
+    z-index: -1;
+    background-color: white;
+}
+
+.opcc > * {
+    opacity: 0;
+}
+
+/* Backgrounds */
+
+#dets {
+    position: absolute;
+    bottom: 0;
+}
+
+.layr1 {
+    background-color: var(--maincol3);
 }

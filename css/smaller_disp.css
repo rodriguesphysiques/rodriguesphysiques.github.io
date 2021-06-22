@@ -137,4 +137,26 @@
       .noi h3 {
         padding: 5px 0;
     }
+
+
+    /* Blogs Main */
+
+    .blg h3 {
+      margin-top: 20px;
+      /* font-size: 60px; */
+      padding-bottom:110px;
+      background-position-x: center;
+      background-position-y: bottom;
+      background-size: 40% auto;
+    }
+
+    .svgi {
+      right: 0;
+      transform: rotate(15deg);
+      height: 10vw;
+    }
+
+    .smacnt {
+      padding-right: 0;
+    }
 }
