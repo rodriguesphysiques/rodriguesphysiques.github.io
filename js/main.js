@@ -31,8 +31,10 @@ function startFunction() {
 function liClicked(e) {
   var els = document.getElementsByClassName("liclck");
   
-  while(els.length > 0){
-    els[0].classList.remove('liclck');
+  if (els[0] != e) {
+    while(els.length > 0){
+      els[0].classList.remove('liclck');
+    }
   }
   e.classList.toggle("liclck");
 }
@@ -69,7 +71,9 @@ function changePage(e) {
 }
 
 
-
+function touchClick(e) {
+  e.classList.toggle("smallmclc");
+}
 
 
 $(document).ready(function() {
