@@ -64,6 +64,12 @@ function changePage(e) {
     case "blogm":
       $('#pageBody').load('blog.html');
       break;
+    case "blogt":
+      $('#pageBody').load('trnblog.html');
+      break;
+    case "blogn":
+      $('#pageBody').load('blog.html');
+      break;
     case "cusm":
       $('#pageBody').load('cntcus.html');
       break;
@@ -78,5 +84,5 @@ function touchClick(e) {
 
 $(document).ready(function() {
   $('#navbar').load('navmenu.html');
-  $('#pageBody').load('trnblog.html');
+  $('#pageBody').load('home.html');
 });
