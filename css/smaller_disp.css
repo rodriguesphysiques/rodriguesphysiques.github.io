@@ -131,6 +131,7 @@
 
       .imgban {
         background-position-x: calc(120vw + 60px);
+        background-position-x: 89%;
       }
 
       .noi h3 {

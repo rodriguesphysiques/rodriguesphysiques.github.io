@@ -1,0 +1,84 @@
+.noi h2 {
+    font-family: 'Libre Franklin', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 100px;
+    letter-spacing: 3px;
+    text-align: right;
+}
+
+.noi h3 {
+    font-family: 'Moon Time', cursive;
+    font-size: 110px;
+    letter-spacing: 2px;
+    padding: 0;
+    margin: 0;
+    text-transform: none;
+    text-align: center;
+    background-size: auto 80%;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: center;
+}
+
+.hghlblg {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px 0;
+}
+
+.hghlblg {
+    text-align: center;
+}
+
+.blgpst {
+    width: 28%;
+    min-width: 300px;
+}
+
+
+
+.blgpst > div {
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: calc(20vw);
+    max-height: 260px;
+    max-width: 430px;
+    min-height: 220px;
+}
+
+.blgpst p {
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    padding: 20px 5%;
+    width: 90%;
+    text-shadow: 0 0px 3px white;
+    background-color: rgba(255, 255, 255, 0.693);
+    opacity: 0;
+    transition: opacity 0.2s linear;
+}
+
+.hghlblg:hover p {
+    
+    opacity: 1;
+}
+
+.blgpst h3 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 500;
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+
+.blgpst h4 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
