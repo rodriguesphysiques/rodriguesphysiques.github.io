@@ -39,6 +39,7 @@
 .blgpst {
     width: 28%;
     min-width: 300px;
+    max-width: 430px;
     margin: 0 20px;
     cursor: pointer;
 }

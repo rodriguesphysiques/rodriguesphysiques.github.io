@@ -46,6 +46,7 @@ function liClicked(e) {
 function changePage(e) {
   var menuP = e.classList;
   menuP = menuP[0];
+  window.scrollTo(0, 0);
   switch(menuP) {
     case "homem":
       $('#pageBody').load('home.html');
@@ -81,6 +82,15 @@ function changePage(e) {
     case "blogn":
       $('#pageBody').load('blog.html');
       break;
+    case "blogt4":
+      $('#pageBody').load('./htmls/blogs/blog4.html');
+      break;
+    case "blogt5":
+      $('#pageBody').load('./htmls/blogs/blog5.html');
+      break;
+    case "blogt6":
+      $('#pageBody').load('./htmls/blogs/blog6.html');
+      break;
     case "cusm":
       $('#pageBody').load('cntcus.html');
       break;
@@ -95,5 +105,6 @@ function touchClick(e) {
 
 $(document).ready(function() {
   $('#navbar').load('navmenu.html');
-  $('#pageBody').load('home.html');
+  // $('#pageBody').load('./htmls/blogs/blog4.html');
+  $('#pageBody').load('blog.html');
 });

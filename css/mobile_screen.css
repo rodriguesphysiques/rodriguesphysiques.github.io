@@ -195,15 +195,15 @@
 
   /* Posts */
 
-  .blgmcntr .uimsd {
-    display: none;
+  .uimsd {
+    display: none !important;
   }
 
   .blgmcntr .uimsd2 {
     width: 0;
   }
 
-  .blgmcntr div {
+  .blgmcntr:not(.nocng) div {
     min-width: 95%;
   }
 
