@@ -2,6 +2,17 @@
     background: inherit;
 }
 
+.adbbck {
+    width: 100%;
+    max-height: 700px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    background: linear-gradient(to top left,transparent 50%,var(--lftTop) 0) top left/calc(100%) calc(100%) no-repeat;
+}
+
 .bloge .layr2 {
     background:
         linear-gradient(to bottom right,transparent 50%,var(--rgtBtm) 0) bottom right/calc(12vw) calc(var(--rgtBtm1) * 12vw) no-repeat,
@@ -41,12 +52,18 @@
     margin-bottom: 20px;
 }
 
+/* Headings */
+
 .blgp h2 {
     width: 90%;
     text-align: center;
     font-weight: 800;
     font-family: 'Pathway Gothic One', sans-serif;
     text-shadow: 0 0 26px var(--maincol3);
+}
+
+.blgp h3 {
+    text-shadow: 0 0 20px var(--maincol3);
 }
 
 .blgmcntr h3 {
@@ -89,6 +106,26 @@ h3.subh3 {
     -webkit-text-stroke-width: 1px;
     word-spacing: 2px;
 }
+
+.hlfcol {
+    background: linear-gradient(to bottom,transparent 55%,var(--rgtBtm) 0)  no-repeat;
+    padding: 20px;
+    
+}
+
+h3.lalgn {
+    text-align: left;
+    text-transform: uppercase;
+}
+
+h3.ralgn {
+    text-align: right;
+    text-transform: uppercase;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+/* Block elements */
 
 .blgmcntr {
     display: flex;
@@ -137,7 +174,37 @@ img {
 
 }
 
+.circ {
+    border-radius: 50%;
+    height: 90%;
+    width: 90%;
+    background-position-x: center;
+    background-size: cover;
+    position: absolute;
+    background-repeat: no-repeat;
+    top: 0;
+
+}
+
+.square {
+    position: relative;
+}
+
+.square:after {
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+
 .athr {
     padding: 20px 2%;
     font-size: 1.1em;
+}
+
+.rbckblock {
+    background: linear-gradient(to right,transparent 72%,var(--bckblkcol) 0)  no-repeat;
+}
+
+.lbckblock {
+    background: linear-gradient(to left,transparent 72%,var(--bckblkcol) 0)  no-repeat;
 }

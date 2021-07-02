@@ -20,6 +20,7 @@ function scrollFunc() {
   }
 
   $(".adbr").css("background-position-y", (scrollPosition*0.4) + "px");
+  $(".slwscrl").css("background-position-y", (scrollPosition*-0.1) + "px");
 }
 
 function startFunction() {
@@ -45,6 +46,7 @@ function liClicked(e) {
 function changePage(e) {
   var menuP = e.classList;
   menuP = menuP[0];
+  console.log(menuP);
   switch(menuP) {
     case "homem":
       $('#pageBody').load('home.html');
@@ -67,6 +69,16 @@ function changePage(e) {
     case "blogt":
       $('#pageBody').load('trnblog.html');
       break;
+    case "blogt1":
+      $('#pageBody').load('./htmls/blogs/blog1.html');
+      break;
+    case "blogt2":
+      $('#pageBody').load('./htmls/blogs/blog2.html');
+      break;
+    case "blogt3":
+      $('#pageBody').load('./htmls/blogs/blog3.html');
+      break;
+    
     case "blogn":
       $('#pageBody').load('blog.html');
       break;
@@ -84,5 +96,5 @@ function touchClick(e) {
 
 $(document).ready(function() {
   $('#navbar').load('navmenu.html');
-  $('#pageBody').load('./htmls/blogs/blog2.html');
+  $('#pageBody').load('home.html');
 });

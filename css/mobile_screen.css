@@ -211,6 +211,11 @@
     position: relative;
   }
 
+  .blgp h3 {
+    font-size: 60px;
+    text-shadow: 0 0 10px var(--maincol3), 0 0 10px var(--maincol3), 0 0 10px var(--maincol3);
+  }
+
   .bckgrndblg {
     position: absolute;
     bottom: 0;
