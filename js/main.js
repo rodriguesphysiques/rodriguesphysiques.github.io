@@ -46,7 +46,6 @@ function liClicked(e) {
 function changePage(e) {
   var menuP = e.classList;
   menuP = menuP[0];
-  console.log(menuP);
   switch(menuP) {
     case "homem":
       $('#pageBody').load('home.html');
