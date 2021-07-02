@@ -84,5 +84,5 @@ function touchClick(e) {
 
 $(document).ready(function() {
   $('#navbar').load('navmenu.html');
-  $('#pageBody').load('home.html');
+  $('#pageBody').load('./htmls/blogs/blog2.html');
 });
