@@ -70,11 +70,18 @@
     text-shadow: 0 0 20px var(--maincol3);
 }
 
+.blgp h4 {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    max-width: 670px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 .blgmcntr h3 {
     font-family: 'Pathway Gothic One', sans-serif;
     color: var(--maincol2);
     font-size: 60px;
-    /* word-spacing: 10px; */
     font-weight: 500;
     letter-spacing: 0;
     padding: 0;
@@ -126,7 +133,32 @@ h3.subh3v2 {
 .hlfcol {
     background: linear-gradient(to bottom,transparent 55%,var(--rgtBtm) 0)  no-repeat;
     padding: 20px;
-    
+}
+
+.hlfcol.v2 {
+    padding: 10px 60px;
+}
+
+.hlfcol.v2.rgta {
+    margin: 0 0 0 auto;
+    background:inherit;
+}
+
+.hlfcol.bckdv {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    padding: 0;
+}
+
+.hlfcol.ral {
+    margin: 0 0 0 auto;
+}
+
+.hlfcol h3.subh3.v2 {
+    text-shadow: 0 0 20px #eee, 0 0 20px #eee;
 }
 
 h3.lalgn {

@@ -216,6 +216,25 @@
     text-shadow: 0 0 10px var(--maincol3), 0 0 10px var(--maincol3), 0 0 10px var(--maincol3);
   }
 
+  div.hlfcol.v2 {
+    padding: 10px ;
+    min-width: calc(100%);
+    margin-left: -20px;
+  }
+
+  div.hlfcol.v2 > h3 {
+    text-align: left;
+  }
+
+  div.hlfcol.v2 > h3.lalgn {
+    text-align: left;
+    padding-left: 10px;
+  }
+
+  div.hlfcol.bckdv {
+    padding: 0 10px;
+  }
+
   .bckgrndblg {
     position: absolute;
     bottom: 0;

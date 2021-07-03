@@ -105,6 +105,6 @@ function touchClick(e) {
 
 $(document).ready(function() {
   $('#navbar').load('navmenu.html');
-  // $('#pageBody').load('./htmls/blogs/blog4.html');
-  $('#pageBody').load('blog.html');
+  $('#pageBody').load('./htmls/blogs/blog5.html');
+  // $('#pageBody').load('home.html');
 });
