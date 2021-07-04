@@ -272,7 +272,7 @@ section {
     grid-row: 11 / span 5;
 }
 
-#imagdiv h3 {
+#imagdiv h3, h3.outimagdiv {
     font-weight: 400;
     color: #B7AAA8;
     letter-spacing: 4px;
@@ -282,6 +282,11 @@ section {
     padding: 0;
     margin: 0;
     font-size: 1.5em;
+}
+
+h3.outimagdiv {
+    display: none;
+    margin-bottom: 10px;
 }
 
 /* -------------------------------------------------- */

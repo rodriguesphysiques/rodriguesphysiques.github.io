@@ -80,9 +80,26 @@
         display: none;
     } */
 
+    #imagdiv h3{
+      display: none;
+    }
+
+    h3.outimagdiv {
+      display: block;
+    }
+
+    #rvws {
+      height:450px;
+    }
+
+    .bcgrnddiv {
+      height: 450px;
+    }
+
     #imagdiv {
-      grid-template-columns: repeat(12, calc(7%)) 0;
+      grid-template-columns: repeat(12, calc(8.5%)) 0;
     height: calc(100% - 67px);
+    grid-gap: 0;
     }/*
     display: grid;
     margin: 0 calc(2%);
