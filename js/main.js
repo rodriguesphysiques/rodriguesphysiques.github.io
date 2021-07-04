@@ -9,7 +9,7 @@ var sticky = 70;
 
 var svgel = document.getElementById("nwnw");
 var emailContent1 = "I would like to enquire about purchasing the ";
-var emailContent2 = " program for R350.  Please contact be back at the above email address.";
+var emailContent2 = " program for R350.  Please contact me back at the above email address.";
 var emailContentm = "";
 
 
