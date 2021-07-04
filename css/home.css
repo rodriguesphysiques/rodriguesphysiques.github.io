@@ -127,7 +127,7 @@
 }
 
 .bcgrnddiv {
-    background: var(--maincol3);
+    /* background: var(--maincol3); */
     position: absolute;
     width: 100%;
     height: 100%;
