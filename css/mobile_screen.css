@@ -86,6 +86,11 @@
     grid-template-rows: repeat(8, 11.9%);
     grid-gap: 0;
 }
+
+#rvws {
+  height: 300px;
+}
+
 #imagdiv img {
     display: block;
     max-width: 100%;
