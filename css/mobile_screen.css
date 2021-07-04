@@ -114,6 +114,14 @@ section {
     justify-content:flex-start;
 }
 
+.blgpst h3 {
+  font-size: 20px;
+}
+
+.blgpst p {
+  font-size: 0.9em;
+}
+
 /* First Row */
 
 #imagdiv section:nth-of-type(1) {
