@@ -43,11 +43,8 @@ function liClicked(e) {
 
 // JQuery only temporary
 
-function changePage(e) {
-  var menuP = e.classList;
-  menuP = menuP[0];
-  window.scrollTo(0, 0);
-  switch(menuP) {
+function changeTo(pthloc) {
+  switch(pthloc) {
     case "homem":
       $('#pageBody').load('home.html');
       break;
@@ -97,6 +94,17 @@ function changePage(e) {
   }
 }
 
+function changePage(e) {
+  console.log('change func');
+  var menuP = e.classList;
+  menuP = menuP[0];
+  window.scrollTo(0, 0);
+  window.location = window.location.pathname + "#" + menuP;
+  // var pathg = window.location.href.split('#');
+  // if (pathg.length>1) changeTo(pathg[1]);
+  // else changeTo('homem');
+}
+
 
 function touchClick(e) {
   e.classList.toggle("smallmclc");
@@ -105,6 +113,15 @@ function touchClick(e) {
 
 $(document).ready(function() {
   $('#navbar').load('navmenu.html');
-  $('#pageBody').load('./htmls/blogs/blog5.html');
-  // $('#pageBody').load('home.html');
+  console.log('ready func');
+  var pathg = window.location.href.split('#');
+  if (pathg.length>1) changeTo(pathg[1]);
+  else changeTo('homem');
 });
+
+window.onhashchange = function() {
+  window.scrollTo(0, 0);
+  var pathg = window.location.href.split('#');
+  if (pathg.length>1) changeTo(pathg[1]);
+  else changeTo('homem');
+}
