@@ -14,7 +14,7 @@
     <h3>Ladies! Feel Free to contact us with any enquiries and we will be sure to get back to you as soon as possible!</h3>
     <input type="text" name="fname" autocomplete="name" placeholder="Full Name">
     <input type="text" name="email" autocomplete="email" placeholder="Email Address">
-    <textarea placeholder="How can we help you?"></textarea>
+    <textarea id="txtAem" placeholder="How can we help you?"></textarea>
     <button id="submitb">Submit</button>
 </div>
 
@@ -54,3 +54,6 @@
 <div id="dets"><span>Copyright <i class="fa fa-copyright" aria-hidden="true"></i> <b>Rodrigues Physiques</b> 2021</span></div>
 
 <script type="text/javascript" src="./js/svg.js"></script>
+<script>
+  if (emailContentm.length>0) document.getElementById('txtAem').value =emailContent1 + emailContentm + emailContent2;
+</script>

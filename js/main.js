@@ -8,6 +8,9 @@ var imgheader = document.getElementById("imgheader");
 var sticky = 70;
 
 var svgel = document.getElementById("nwnw");
+var emailContent1 = "I would like to enquire about purchasing the ";
+var emailContent2 = " program for R350.  Please contact be back at the above email address.";
+var emailContentm = "";
 
 
 function scrollFunc() {
@@ -29,6 +32,8 @@ function startFunction() {
 
 
 
+
+
 function liClicked(e) {
   var els = document.getElementsByClassName("liclck");
   
@@ -39,6 +44,7 @@ function liClicked(e) {
   }
   e.classList.toggle("liclck");
 }
+
 
 
 // JQuery only temporary
@@ -100,11 +106,29 @@ function changePage(e) {
   menuP = menuP[0];
   window.scrollTo(0, 0);
   window.location = window.location.pathname + "#" + menuP;
-  // var pathg = window.location.href.split('#');
-  // if (pathg.length>1) changeTo(pathg[1]);
-  // else changeTo('homem');
 }
 
+function buyButton(typeB) {
+  switch(typeB) {
+    case 'bbEqn':
+      emailContentm = "Beach Bumz";
+      break;
+    case 'rfrshEqn':
+      emailContentm = "Re-Fresh";
+      break;
+    case 'lvlUpHEqn':
+      emailContentm = "Level-Up Home";
+      break;
+    case 'lvlUpGEqn':
+      emailContentm = "Level-Up Gym";
+      break;
+    default:
+      emailContentm = "";
+      break;
+  }
+
+  window.location = window.location.pathname + "#cusm";
+}
 
 function touchClick(e) {
   e.classList.toggle("smallmclc");
