@@ -9,8 +9,10 @@ var sticky = 70;
 
 var svgel = document.getElementById("nwnw");
 var emailContent1 = "I would like to enquire about purchasing the ";
-var emailContent2 = " program for R350.  Please contact me back at the above email address.";
+var emailContent2 = " program for ";
+var emailContent3 = ".  Please contact me back at the above email address.";
 var emailContentm = "";
+var emailContentp = "R350";
 
 
 function scrollFunc() {
@@ -112,15 +114,19 @@ function buyButton(typeB) {
   switch(typeB) {
     case 'bbEqn':
       emailContentm = "Beach Bumz";
+      emailContentp = "R250";
       break;
     case 'rfrshEqn':
       emailContentm = "Re-Fresh";
+      emailContentp = "R350";
       break;
     case 'lvlUpHEqn':
       emailContentm = "Level-Up Home";
+      emailContentp = "R350";
       break;
     case 'lvlUpGEqn':
       emailContentm = "Level-Up Gym";
+      emailContentp = "R350";
       break;
     default:
       emailContentm = "";
