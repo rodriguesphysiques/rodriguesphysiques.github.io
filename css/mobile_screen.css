@@ -76,8 +76,12 @@
       margin-top: 20px;
     }
 
+    /* #imagdiv section:nth-child(n+6) {
+        display: none;
+    } */
+
     #imagdiv {
-    
+      grid-template-columns: repeat(12, calc(7%)) 0;
     height: calc(100% - 67px);
     }/*
     display: grid;
