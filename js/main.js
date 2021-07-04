@@ -61,7 +61,7 @@ function changeTo(pthloc) {
       $('#pageBody').load('./htmls/programmes/6wkg.html');
       break;
     case "blogm":
-      $('#pageBody').load('blog.html');
+      $('#pageBody').load('blogm.html');
       break;
     case "blogt":
       $('#pageBody').load('trnblog.html');

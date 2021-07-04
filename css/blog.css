@@ -88,6 +88,7 @@
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     color: var(--maincol2);
+    text-transform:capitalize;
 }
 
 
@@ -301,5 +302,5 @@ button:active {
 }
 
 .layr1 {
-    background-color: var(--maincol3);
+    /* background-color: var(--maincol3); */
 }

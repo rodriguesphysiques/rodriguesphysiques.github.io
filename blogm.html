@@ -5,16 +5,52 @@
     --rgtBtm: #aac4cb82;
 }
 .imgban {
-    background-image: url("./res/images/trnblg.png");
+    background-image: url("./res/images/blogm.png");
 }
 </style>
 <link rel="stylesheet" type="text/css" href="./css/blog.css">
+<style>
+    @media all and (max-width: 780px) {
+        .blg h3 {
+            position: absolute;
+            min-width: 90%;
+            bottom: 0;
+            margin: 0 auto;
+            padding-bottom: 0 !important; 
+            text-shadow: 0 0 26px var(--maincol3),0 0 26px var(--maincol3),0 0 26px var(--maincol3); 
+        }
+    }
+</style>
 
 <div class="scndbody progs mane">
 
 
     <div class="bck layr1">
         <div class="adbr imgban"></div>
+
+        <div class='toppst hghlblg opcc'>
+            <div class="blgpst">
+                <div style="background-image: url('./res/images/Blog/fd1.png');">
+                    <p>This is a teaser description that shows on hover.</p>
+                </div>
+                <h4>Issue Date</h4>
+                <h3>Heading</h3>
+            </div>
+            <div class="blgpst">
+                <div style="background-image: url('./res/images/Blog/fd2.png');">
+                    <p>This is a teaser description that shows on hover.</p>
+                </div>
+                <h4>Issue Date</h4>
+                <h3>Heading</h3>
+            </div>
+            <div class="blgpst">
+                <div style="background-image: url('./res/images/Blog/fd3.png');">
+                    <p>This is a teaser description that shows on hover.</p>
+                </div>
+                <h4>Issue Date</h4>
+                <h3>Heading</h3>
+            </div>
+        </div>
 
         <div class='toppst hghlblg opcc'>
             <div class="blgpst">
@@ -57,12 +93,14 @@
 
     <div class="frgrnd">
 
-        <div class="adbr imgban noi blg">
+        <div class="adbr imgban noi blg" style="position: relative;">
             <div>
-                <h2>Training</h2>
-                <h3 style="background-image: url('./res/images/weights.png'); opacity: 0.8;">Read How</h3>
+                <h2>Our Blog</h2>
+                <!-- <h3>Training and Nutrition</h3> -->
             </div>
         </div>
+
+        <h2>Training</h2>
 
         <div class='toppst hghlblg'>
             <div class="blogt1 blgpst" onclick="changePage(this)">
@@ -88,11 +126,38 @@
             </div>
         </div>
 
+        <h2>Nutrition</h2>
+
+        <div class='toppst hghlblg'>
+            <div class="blogt4 blgpst" onclick="changePage(this)">
+                <div style="background-image: url('./res/images/Blog/fd1.png');">
+                    <p>There’s a common misconception about food- that if we limit the consumption of it or if we label them as good versus bad it will help us in our journeys and in our diets. But have you noticed that if you do that you never fully satisfied?</p>
+                </div>
+                <h4>06 June 2021</h4>
+                <h3>Top Nutritional Myths of Weight Loss vs Facts</h3>
+            </div>
+            <div class="blogt5 blgpst" onclick="changePage(this)">
+                <div style="background-image: url('./res/images/Blog/fd2.png');">
+                    <p>Food is vital to building muscle or losing weight. If you don’t fuel yourself correctly you can expect either weight gain, enormous weight loss, tiredness, lack of sufficient energy or a slower metabolism. </p>
+                </div>
+                <h4>17 June 2021</h4>
+                <h3>Tips on Improving Nutritional Intake</h3>
+            </div>
+            <div class="blogt6 blgpst" onclick="changePage(this)">
+                <div style="background-image: url('./res/images/Blog/fd3.png');">
+                    <p>We have all seen the hypes of detox skinny teas, juice cleanses or smoothie diets out in the market, but how much of all of this is effective?  
+                        At RP we believe that we have all the tools we need to detox our bodies, without going to any outrageous extremes!</p>
+                </div>
+                <h4>23 june 2021</h4>
+                <h3>Let’s Talk Detox!</h3>
+            </div>
+        </div>
+
         <div class="commj">
             <div class="hshine svgi"></div>
             <h2>Join Our Community</h2>
             <h3>Join our sisterhood and receive free workouts, receipes, updates and more.</h3>
-            <div class="emld"><input type="email" placeholder="Email Address" required="" autocomplete="email"><button id="joinbt">Join Us</button> </div>
+            <div class="emld"><input type="email" id="emad" placeholder="Email Address" required="" autocomplete="email"><button id="joinbt">Join Us</button> </div>
         </div>
 
         <div class="smacnt" style="background: var(--maincol3); margin-bottom: 0;">
