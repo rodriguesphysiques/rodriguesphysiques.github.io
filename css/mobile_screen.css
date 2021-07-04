@@ -84,6 +84,7 @@
       display: none;
     }
 
+
     h3.outimagdiv {
       display: block;
     }
@@ -94,10 +95,11 @@
 
     .bcgrnddiv {
       height: 450px;
+      transform: scale(-1,1);
     }
 
     #imagdiv {
-      grid-template-columns: repeat(12, calc(8.5%)) 0;
+      grid-template-columns: repeat(13, calc(8.1%)) 0;
     height: calc(100% - 67px);
     grid-gap: 0;
     }/*
