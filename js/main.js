@@ -103,7 +103,6 @@ function changeTo(pthloc) {
 }
 
 function changePage(e) {
-  console.log('change func');
   var menuP = e.classList;
   menuP = menuP[0];
   window.scrollTo(0, 0);
@@ -143,7 +142,6 @@ function touchClick(e) {
 
 $(document).ready(function() {
   $('#navbar').load('navmenu.html');
-  console.log('ready func');
   var pathg = window.location.href.split('#');
   if (pathg.length>1) changeTo(pathg[1]);
   else changeTo('homem');
@@ -155,3 +153,42 @@ window.onhashchange = function() {
   if (pathg.length>1) changeTo(pathg[1]);
   else changeTo('homem');
 }
+
+
+function create_post(e) {
+  //   $.post("http://int.bodiesbyrp.com:155/emailform", {
+  //   randomWord: "Just Some Random word",
+  //   email: $("#emad").value,
+  //   name: $('#fname').value
+
+  // }).complete(function( data ) {
+  //   console.log(data);
+  //   });
+
+  // e.preventDefault();
+
+  $.ajax({
+    async: true,   // this will solve the problem
+    url: "http://int.bodiesbyrp.com/emailform",
+    type: 'POST',
+    data: {
+      randomWord: "Just Some Random word",
+      email: $("#emad").value,
+      name: $('#fname').value
+  
+    },
+    enctype: 'multipart/form-data',
+    contentType: false,
+    processData: false,
+    datatype: "script",
+    beforeSend: function() {
+      jQuery('#my_error_report').html('');
+    },
+    success:function( data ) {
+      console.log(data);
+      }
+  });
+  // });
+  
+  return false;
+};
